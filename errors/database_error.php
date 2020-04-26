@@ -3,12 +3,12 @@
 
 <!-- the head section -->
 <head>
-    <title>Zippy's Used Auto</title>
+    <title>Famous Quotes</title>
 </head>
 
 <!-- the body section -->
 <body>
-    <header><h1>Zippy's Used Auto</h1></header>
+    <header><h1>Famous Quotes</h1></header>
 
     <main>
         <h1>Database Error</h1>
