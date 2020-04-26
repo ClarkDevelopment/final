@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/final.iml" filepath="$PROJECT_DIR$/.idea/final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zippys/.idea/zippys.iml" filepath="$PROJECT_DIR$/../zippys/.idea/zippys.iml" />
+    </modules>
+  </component>
+</project>
