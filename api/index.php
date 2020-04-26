@@ -11,6 +11,8 @@ require("../model/quote_model.php");
 $method = $_SERVER['REQUEST_METHOD'];
 $return_data = array();
 $errors = array();
+$public = 1;
+$approved = 1;
 
 switch ($method) {
     case 'POST':
@@ -50,14 +52,14 @@ switch ($method) {
             $author = filter_input(INPUT_GET, 'authorId');
             $category = filter_input(INPUT_GET, 'categoryId');
 
-            $return_data = retrieve_api_sorted_quote_list($author, $category);
+            $return_data = retrieve_api_sorted_quote_list($author, $category, 0, $approved);
         }
         else if ( isset($_GET['authorId']) ) {
             if ( strtoupper($_GET['authorId']) == "ALL" )
                 $return_data = retrieve_all_authors();
             else {
                 $author = filter_input(INPUT_GET, 'authorId');
-                $return_data = retrieve_api_sorted_quote_list($author);
+                $return_data = retrieve_api_sorted_quote_list($author, 0 , 0, $approved);
             }
         }
         else if ( isset($_GET['categoryId']) ) {
@@ -65,15 +67,15 @@ switch ($method) {
                 $return_data = retrieve_all_categories();
             else {
                 $category = filter_input(INPUT_GET, 'categoryId');
-                $return_data = retrieve_api_sorted_quote_list(0, $category);
+                $return_data = retrieve_api_sorted_quote_list(0, $category, 0, $approved);
             }
         }
         else if ( isset($_GET['limit']) ) {
             $limit = round($_GET['limit']);
-            $return_data = retrieve_api_sorted_quote_list(0, 0, 0, 0);
+            $return_data = retrieve_api_sorted_quote_list(0, 0, 0, $approved, $limit);
         }
         else {
-            $return_data = retrieve_api_default_quote_list(1);
+            $return_data = retrieve_api_default_quote_list($public);
         }
         if ( !count($return_data) ) $return_data = array("msg"=>"No results were found matching your criteria");
         print json_encode($return_data);
