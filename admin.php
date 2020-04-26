@@ -45,7 +45,9 @@ if ($action == "delete_quote") {
     $category = filter_input(INPUT_POST, 'category');
     $author = filter_input(INPUT_POST, 'author');
     $text = filter_input(INPUT_POST, 'text');
-    add_quote($category, $author, $text);
+    $approved = 1;
+
+    add_quote($category, $author, $text, $approved);
 
     $quotes = retrieve_default_quote_list();
     $categories = retrieve_all_categories();

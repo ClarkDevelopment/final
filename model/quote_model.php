@@ -28,7 +28,7 @@ function retrieve_api_default_quote_list($public=0) {
     return $quotes;
 }
 
-function retrieve_sorted_quote_list($author=0,$category=0,$order=0, $approved=0, $limit=0) {
+function retrieve_sorted_quote_list($author=0,$category=0,$order=0, $approved=0) {
     global $db;
     $pdo_values = array();
     $sql ="select quote.*,author.author,category.category from quote ";
@@ -48,7 +48,6 @@ function retrieve_sorted_quote_list($author=0,$category=0,$order=0, $approved=0,
     if ( $approved) $sql.= "and quote.approved=1 ";
     if ( isset($order) and $order ) $sql.= "order by quote.id";
     else $sql.= "order by quote.id";
-    if ( $limit ) " limit 0,".$limit;
     $statement = $db->prepare($sql);
     $statement->execute($pdo_values);
     $quotes = $statement->fetchAll();

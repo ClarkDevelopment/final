@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="665508ad-57ed-4fcb-a5e4-dae44cc909e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/quote_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/quote_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../zippys/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/util/valid_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/util/valid_admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +21,7 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../zippys" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1b0KeYclbFxFG814wAv5F7chC8m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -52,7 +54,7 @@
       <updated>1587763666323</updated>
       <workItem from="1587763667801" duration="2599000" />
       <workItem from="1587846720184" duration="8469000" />
-      <workItem from="1587855209223" duration="4610000" />
+      <workItem from="1587855209223" duration="5430000" />
     </task>
     <servers />
   </component>
