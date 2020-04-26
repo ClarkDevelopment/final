@@ -1,6 +1,6 @@
 <?php include("view/header.html"); ?>
     <div class="container mt-5">
-    <form name="quoteSort" action="admin.php?action=sort" method="post">
+    <form name="quoteSort" action="index.php?action=sort" method="post">
         <div class="row">
             <div class="col">
                 <div class="form-group">

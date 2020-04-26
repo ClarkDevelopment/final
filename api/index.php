@@ -26,14 +26,14 @@ switch ($method) {
         }
         else {
             $authorResults = retrieve_specific_author($author);
-            if ( !count($authorResults) ) $errors[] = array("msg"=>"Invalid Author Id received");
+            if ( !$authorResults ) $errors[] = array("msg"=>"Invalid Author Id received");
         }
         if ( !isset($category) or !$category ) {
             $errors[] = array("msg" => "categoryId was not included");
         }
         else {
             $categoryResults = retrieve_specific_category($category);
-            if ( !count($categoryResults) ) $errors[] = array("msg"=>"Invalid Category Id received");
+            if ( !$categoryResults ) $errors[] = array("msg"=>"Invalid Category Id received");
         }
         if ( !isset($text) or !strlen($text) ) {
             $errors[] = array("msg"=>"text was not included");

@@ -45,9 +45,10 @@ function retrieve_sorted_quote_list($author=0,$category=0,$order=0, $approved=0)
         $pdo_values["category"]=$category;
         $position = "and ";
     }
-    if ( $approved) $sql.= "and quote.approved=1 ";
+    if ( $approved ) $sql.= $position ." quote.approved=1 ";
     if ( isset($order) and $order ) $sql.= "order by quote.id";
     else $sql.= "order by quote.id";
+    
     $statement = $db->prepare($sql);
     $statement->execute($pdo_values);
     $quotes = $statement->fetchAll();

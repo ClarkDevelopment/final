@@ -37,7 +37,7 @@ if ($action == "delete_quote") {
     $formSort = filter_input(INPUT_POST, 'formSort');
     $approved = 1;
 
-    $quotes = retrieve_sorted_quote_list($authorSort, $categorySort, $formSort, $approved);
+    $quotes = retrieve_sorted_quote_list($authorSort, $categorySort, $formSort);
     $authors = retrieve_all_authors();
     $categories = retrieve_all_categories();
         include("view/admin.php");
