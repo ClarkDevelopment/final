@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="665508ad-57ed-4fcb-a5e4-dae44cc909e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/util/valid_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/util/valid_admin.php" afterDir="false" />
     </list>
@@ -17,11 +21,12 @@
     </execution>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../zippys" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1b0KeYclbFxFG814wAv5F7chC8m" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../zippys" />
   </component>
@@ -49,7 +54,7 @@
       <updated>1587763666323</updated>
       <workItem from="1587763667801" duration="2599000" />
       <workItem from="1587846720184" duration="8469000" />
-      <workItem from="1587855209223" duration="2799000" />
+      <workItem from="1587855209223" duration="3580000" />
     </task>
     <servers />
   </component>
