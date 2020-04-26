@@ -44,8 +44,13 @@
                             </div>
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="radio" name="formSort" id="sort2" value="1"
-                                    <?php print (((isset($formSort) and $formSort) or !isset($formSort))?"CHECKED":""); ?>>
+                                    <?php print (((isset($formSort) and $formSort == 1) or !isset($formSort))?"CHECKED":""); ?>>
                                 <label class="form-check-label" for="sort2">Quote</label>
+                            </div>
+                            <div class="form-check form-check-inline ml-4">
+                                <input class="form-check-input" type="radio" name="formSort" id="sort3" value="2"
+                                    <?php print (((isset($formSort) and $formSort == 2) or !isset($formSort))?"CHECKED":""); ?>>
+                                <label class="form-check-label" for="sort3">Unapproved</label>
                             </div>
                             <button type="submit" class="btn btn-primary ml-3">Submit</button>
                         </div>

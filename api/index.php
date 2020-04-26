@@ -78,6 +78,12 @@ switch ($method) {
             $return_data = retrieve_api_default_quote_list($public);
         }
         if ( !count($return_data) ) $return_data = array("msg"=>"No results were found matching your criteria");
+
+        if ( isset( $_GET['random']) and $_GET['random'] == true and count($return_data) ) {
+            $results_count = count($return_data) - 1;
+            $random_key = rand(0,$results_count);
+            $return_data = $return_data[$random_key];
+        }
         print json_encode($return_data);
         break;
     default:

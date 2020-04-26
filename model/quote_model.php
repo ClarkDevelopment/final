@@ -46,7 +46,8 @@ function retrieve_sorted_quote_list($author=0,$category=0,$order=0, $approved=0)
         $position = "and ";
     }
     if ( $approved ) $sql.= $position ." quote.approved=1 ";
-    if ( isset($order) and $order ) $sql.= "order by quote.id";
+    if ( isset($order) and $order == 1 ) $sql.= "order by quote.text";
+    else if ( isset($order) and $order == 2 ) $sql.= "order by quote.approved";
     else $sql.= "order by quote.id";
 
     $statement = $db->prepare($sql);
