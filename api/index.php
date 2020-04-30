@@ -14,6 +14,8 @@ $errors = array();
 $public = 1;
 $approved = 1;
 
+//This header should be passed in the request, but I'll set it automatically regardless
+header("Content-Type: application/json");
 switch ($method) {
     case 'POST':
         $author = filter_input(INPUT_POST, 'authorId');

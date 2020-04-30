@@ -4,8 +4,11 @@ $username = 'nghqg6dkmjn3wrwu';
 $password = 'waaw7b4o5bwpb0g6';
 
 try {
-    $db = new PDO($dsn, $username, $password);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $options =[
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+    ];
+    $db = new PDO($dsn, $username, $password, $options);
 } catch (PDOException $e) {
     $error_message = $e->getMessage();
     include('./errors/database_error.php');

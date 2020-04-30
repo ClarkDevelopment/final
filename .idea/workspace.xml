@@ -4,8 +4,7 @@
     <list default="true" id="665508ad-57ed-4fcb-a5e4-dae44cc909e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/quote_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/quote_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/view/admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../zippys/util/valid_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/../zippys/util/valid_admin.php" afterDir="false" />
@@ -16,7 +15,8 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zippys" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -55,7 +55,9 @@
       <updated>1587763666323</updated>
       <workItem from="1587763667801" duration="2599000" />
       <workItem from="1587846720184" duration="8469000" />
-      <workItem from="1587855209223" duration="9917000" />
+      <workItem from="1587855209223" duration="10189000" />
+      <workItem from="1588121732439" duration="639000" />
+      <workItem from="1588280287707" duration="1336000" />
     </task>
     <servers />
   </component>
